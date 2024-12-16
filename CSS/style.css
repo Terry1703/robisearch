@@ -1,0 +1,366 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+nav {
+    background-color: rgb(70, 140, 245);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2em;
+    padding: 10px 15px; 
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #575757; 
+    border-radius: 5px; 
+}
+
+#main-header {
+    color: blue;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+#sub-header {
+    color: red;
+    text-align: center;
+    font-size: 2em;
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0; 
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 15px;
+    margin: 0 20px;
+    color: #333; 
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-flexbox;
+}
+
+.read-more-btn:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.photo-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(200px);
+    box-shadow: 0 8px 15px rgba(9, 12, 185, 0.2); 
+    background-color: rgba(122, 140, 161, 0.9); 
+}
+
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+.photo-container:hover .card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    background-color: #008CBA; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f73; 
+}
+ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 10px; 
+}
+
+li {
+    margin: 10px 5px; 
+}
+
+button {
+    background-color: #0298ac;  
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+button a {
+    color: white; 
+    text-decoration: none;  
+}
+
+button:hover {
+    background-color: #6d068d;  
+    transform: scale(1.1);  
+}
+
+
+button a:hover {
+    color: #1d5aa0;  
+}
+
+li + li {
+    margin-top: 10px;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-container .contact-info,
+.footer-container .social-media {
+    width: 45%;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-container p {
+    margin: 5px 0;
+}
+
+.footer-container .social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container .social-media ul li {
+    margin: 5px 0;
+}
+
+.footer-container .social-media ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.footer-container .social-media ul li a:hover {
+    color: #f1c40f;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    font-size: 16px;
+}
+
+.stat-item i {
+    font-size: 30px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    margin: 0;
+    font-weight: bold;
+}
+/* Styling for the service table */
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.service-table th,
+.service-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.service-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.service-table td img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for the header */
+#main-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Style for section */
+#served-countries {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Adjust image size */
+.service-image {
+    max-width: 120px;
+    max-height: 100px;
+}
+#served-countries {
+    margin: 40px auto;
+    width: 90%;
+}
+
+#served-countries .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.service-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 250px; /* Adjust image size */
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item img:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+
+
+
